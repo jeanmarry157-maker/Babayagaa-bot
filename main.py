@@ -10,5 +10,5 @@ def main():
   application.edd_handler(CommandHandler("start", start))
                         
   application.ram_polling()
-if __name__ == "__main___":
+if __name__ == "__main__":
   main()

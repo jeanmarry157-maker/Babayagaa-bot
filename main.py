@@ -1,1 +1,1 @@
-from telegramimport.bot
+from telegram import bot

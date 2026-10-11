@@ -6,7 +6,7 @@ async def start(update, context):
   await update.message.reply_text("Baba Yaga está online.")
 
 def main():
-  application = Application.Builder().token(token).build()
+  application = ApplicationBuilder().token(token).build()
   application.edd_handler(CommandHandler("start", start))
                         
   application.run_polling()

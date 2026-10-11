@@ -7,7 +7,7 @@ async def start(update, context):
 
 def main():
   application = ApplicationBuilder().token(token).build()
-  application.edd_handler(CommandHandler("start", start))
+  application.add_handler(CommandHandler("start", start))
                         
   application.run_polling()
 if __name__ == "__main__":

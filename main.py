@@ -9,6 +9,6 @@ def main():
   application = Application.Builder().token(token).build()
   application.edd_handler(CommandHandler("start", start))
                         
-  application.ram_polling()
+  application.run_polling()
 if __name__ == "__main__":
      main()
